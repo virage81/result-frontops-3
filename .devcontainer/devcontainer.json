@@ -1,0 +1,8 @@
+{
+	"image": "node:24-alpine",
+	"workspaceFolder": "/app",
+	"mounts": [
+		"source=${localWorkspaceFolder},target=/app,type=bind"
+	],
+	"postCreateCommand": "npm ci"
+}
