@@ -37,8 +37,6 @@ jobs:
           script: |
             cd result-frontops-3
 
-            git pull
-
             docker pull ${{ secrets.IMAGE_NAME }}
 
             docker compose down || true
