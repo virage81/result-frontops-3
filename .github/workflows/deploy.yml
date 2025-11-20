@@ -41,7 +41,7 @@ jobs:
 
             docker pull ${{ secrets.IMAGE_NAME }}
 
-            docker compose down
+            docker compose down || true
 
             docker compose up -d
 
